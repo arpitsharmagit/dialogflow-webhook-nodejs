@@ -1,0 +1,928 @@
+2018-07-08T10:47:42.582Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:47:42.584Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:47:42.609Z - info: Execution took 892 ms, finished with status: 'crash'
+2018-07-08T10:47:51.126Z - info: User function triggered, starting execution
+2018-07-08T10:47:51.128Z - info: Dialogflow Request headers: {"accept-language":"en-US,en;q=0.9","accept-encoding":"gzip, deflate, br","accept":"*/*","content-type":"application/json","postman-token":"55115bad-45e8-4181-066e-51ab32639819","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36","content-length":"714","connection":"close","host":"localhost:5000"}
+2018-07-08T10:47:51.128Z - info: Dialogflow Request body: {"responseId":"2726b5cf-958e-499f-b6c9-e57b3294d28e","queryResult":{"queryText":"project owner","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":99,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T10:47:51.129Z - info: getProjectOwner
+2018-07-08T10:47:51.135Z - info: [ { project: 'AM01' } ]
+2018-07-08T10:47:51.135Z - info: Kate Svoboda, Project AM01,  has issues and may get delayed.
+2018-07-08T10:47:51.135Z - info: Function crashed
+2018-07-08T10:47:51.136Z - info: ReferenceError: element is not defined
+    at getProjectOwner (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:163:9)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:200:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T10:47:51.143Z - info: Execution took 17 ms, user function completed successfully
+2018-07-08T10:48:46.118Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:51:10.490Z - info: User function triggered, starting execution
+2018-07-08T10:51:10.491Z - info: Dialogflow Request headers: {"accept-language":"en-US,en;q=0.9","accept-encoding":"gzip, deflate, br","accept":"*/*","content-type":"application/json","postman-token":"b737d7f4-8cb7-151e-5456-333168fac182","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36","content-length":"714","connection":"close","host":"localhost:5000"}
+Dialogflow Request body: {"responseId":"2726b5cf-958e-499f-b6c9-e57b3294d28e","queryResult":{"queryText":"project owner","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":99,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjectOwner
+2018-07-08T10:51:10.495Z - info: [ { project: 'AM01' } ]
+2018-07-08T10:51:10.496Z - info: Function crashed
+2018-07-08T10:51:10.496Z - info: ReferenceError: issueproject is not defined
+    at /home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:159:24
+    at Array.forEach (<anonymous>)
+    at getProjectOwner (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:152:18)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:200:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+2018-07-08T10:51:10.504Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T10:52:07.355Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:52:30.093Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:53:13.454Z - info: User function triggered, starting execution
+2018-07-08T10:53:13.456Z - info: Dialogflow Request headers: {"accept-language":"en-US,en;q=0.9","accept-encoding":"gzip, deflate, br","accept":"*/*","content-type":"application/json","postman-token":"e2c40987-da05-6481-cf4d-7e2430c3cc34","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36","content-length":"714","connection":"close","host":"localhost:5000"}
+2018-07-08T10:53:13.458Z - info: Dialogflow Request body: {"responseId":"2726b5cf-958e-499f-b6c9-e57b3294d28e","queryResult":{"queryText":"project owner","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":99,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjectOwner
+2018-07-08T10:53:13.462Z - info: [ { project: 'AM01' } ]
+2018-07-08T10:53:13.465Z - info: Kate Svoboda, Project AM01,  has issues and may get delayed.
+2018-07-08T10:53:13.467Z - info: [ { pm: 'vijay', tl: 'abhishek', developer: 'aman', qa: 'neeraj' } ]
+Kate Svoboda, PM undefined, TL undefined, Developer undefined and QA undefined.
+2018-07-08T10:53:13.473Z - info: Execution took 18 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:55:32.222Z - info: User function triggered, starting execution
+2018-07-08T10:55:32.225Z - info: Dialogflow Request headers: {"accept-language":"en-US,en;q=0.9","accept-encoding":"gzip, deflate, br","accept":"*/*","content-type":"application/json","postman-token":"a2bf3aa4-8764-414f-9273-eab0fd82a9c4","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36","content-length":"714","connection":"close","host":"localhost:5000"}
+Dialogflow Request body: {"responseId":"2726b5cf-958e-499f-b6c9-e57b3294d28e","queryResult":{"queryText":"project owner","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":99,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjectOwner
+2018-07-08T10:55:32.232Z - info: [ { project: 'AM01' } ]
+Kate Svoboda, Project AM01,  has issues and may get delayed.
+2018-07-08T10:55:32.233Z - info: [ { pm: 'vijay', tl: 'abhishek', developer: 'aman', qa: 'neeraj' } ]
+Kate Svoboda, PM undefined, TL undefined, Developer undefined and QA undefined.
+2018-07-08T10:55:32.241Z - info: Execution took 19 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:56:18.282Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T10:56:26.621Z - info: User function triggered, starting execution
+2018-07-08T10:56:26.623Z - info: Dialogflow Request headers: {"accept-language":"en-US,en;q=0.9","accept-encoding":"gzip, deflate, br","accept":"*/*","content-type":"application/json","postman-token":"9fa1574d-0716-29df-400b-490fdbc4e095","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36","content-length":"714","connection":"close","host":"localhost:5000"}
+2018-07-08T10:56:26.623Z - info: Dialogflow Request body: {"responseId":"2726b5cf-958e-499f-b6c9-e57b3294d28e","queryResult":{"queryText":"project owner","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":99,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T10:56:26.623Z - info: getProjectOwner
+2018-07-08T10:56:26.628Z - info: [ { project: 'AM01' } ]
+2018-07-08T10:56:26.629Z - info: Kate Svoboda, Project AM01,  has issues and may get delayed.
+2018-07-08T10:56:26.632Z - info: [ { pm: 'vijay', tl: 'abhishek', developer: 'aman', qa: 'neeraj' } ]
+2018-07-08T10:56:26.633Z - info: Kate Svoboda, PM undefined, TL undefined, Developer undefined and QA undefined.
+2018-07-08T10:56:26.640Z - info: Execution took 18 ms, user function completed successfully
+2018-07-08T10:59:22.720Z - info: User function triggered, starting execution
+2018-07-08T10:59:22.722Z - info: Dialogflow Request headers: {"accept-language":"en-US,en;q=0.9","accept-encoding":"gzip, deflate, br","accept":"*/*","content-type":"application/json","postman-token":"46d2524d-aa32-b7d8-add6-2ef8306d4ca4","origin":"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop","cache-control":"no-cache","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36","content-length":"714","connection":"close","host":"localhost:5000"}
+Dialogflow Request body: {"responseId":"2726b5cf-958e-499f-b6c9-e57b3294d28e","queryResult":{"queryText":"project owner","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":99,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjectOwner
+2018-07-08T10:59:22.726Z - info: [ { project: 'AM01' } ]
+2018-07-08T10:59:22.727Z - info: Kate Svoboda, Project AM01,  has issues and may get delayed.
+2018-07-08T10:59:22.729Z - info: { pm: 'vijay', tl: 'abhishek', developer: 'aman', qa: 'neeraj' }
+2018-07-08T10:59:22.731Z - info: Kate Svoboda, PM vijay, TL abhishek, Developer aman and QA neeraj.
+2018-07-08T10:59:22.738Z - info: Execution took 18 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:01:58.390Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:10:02.355Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:13:06.023Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:17:48.938Z - info: User function triggered, starting execution
+2018-07-08T11:17:48.941Z - info: body: {"responseId":"8b85c696-9c57-4846-83d6-c68f4335e83b","queryResult":{"queryText":"arpit","action":"input.unknown","parameters":{},"allRequiredParamsPresent":true,"fulfillmentText":"Sorry, can you say that again?","fulfillmentMessages":[{"text":{"text":["Sorry, what was that?"]}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/cfeddb5c-b252-4670-858a-b5d77584d143","displayName":"Default Fallback Intent"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+fallback
+2018-07-08T11:17:48.950Z - info: Execution took 13 ms, user function completed successfully
+2018-07-08T11:17:48.951Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:18:55.287Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:19:41.879Z - info: User function triggered, starting execution
+2018-07-08T11:19:41.880Z - info: body: {"responseId":"8b85c696-9c57-4846-83d6-c68f4335e83b","queryResult":{"queryText":"arpit","action":"input.unknown","parameters":{},"allRequiredParamsPresent":true,"fulfillmentText":"Sorry, can you say that again?","fulfillmentMessages":[{"text":{"text":["Sorry, what was that?"]}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/cfeddb5c-b252-4670-858a-b5d77584d143","displayName":"Default Fallback Intent"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+fallback
+2018-07-08T11:19:41.887Z - info: Execution took 8 ms, user function completed successfully
+2018-07-08T11:19:41.888Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:20:19.867Z - info: User function triggered, starting execution
+2018-07-08T11:20:19.872Z - info: body: {"responseId":"5f918f63-3877-4751-8024-74b2c70f256b","queryResult":{"queryText":"kate","parameters":{"username":"Kate Svoboda"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getusername
+2018-07-08T11:20:19.874Z - info: user:  {"empid":1,"username":"Kate Svoboda","role":"VP"}
+2018-07-08T11:20:19.881Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T11:20:19.882Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:20:33.319Z - info: User function triggered, starting execution
+2018-07-08T11:20:33.322Z - info: body: {"responseId":"5f918f63-3877-4751-8024-74b2c70f256b","queryResult":{"queryText":"kate","parameters":{"username":"arpit"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:20:33.322Z - info: getusername
+2018-07-08T11:20:33.325Z - info: user:  undefined
+2018-07-08T11:20:33.332Z - info: Execution took 13 ms, user function completed successfully
+2018-07-08T11:20:33.333Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:22:15.513Z - info: User function triggered, starting execution
+2018-07-08T11:22:15.515Z - info: body: {"responseId":"5f918f63-3877-4751-8024-74b2c70f256b","queryResult":{"queryText":"kate","parameters":{"username":"Kate Svoboda"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getusername
+2018-07-08T11:22:15.526Z - info: user:  {"empid":1,"username":"Kate Svoboda","role":"VP"}
+Execution took 15 ms, user function completed successfully
+2018-07-08T11:22:15.532Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:26:46.516Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:28:48.001Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:28:48.004Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:28:48.032Z - info: Execution took 833 ms, finished with status: 'crash'
+2018-07-08T11:29:00.743Z - info: User function triggered, starting execution
+2018-07-08T11:29:00.744Z - info: Function crashed
+2018-07-08T11:29:00.745Z - info: SyntaxError: Identifier 'empid' has already been declared
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:114:7)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+2018-07-08T11:29:00.756Z - info: Execution took 8 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:30:10.526Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:30:27.337Z - info: User function triggered, starting execution
+2018-07-08T11:30:27.339Z - info: body: {"responseId":"abe9e923-9df5-4a29-bc5c-47db5ffc1f3f","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":2,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:30:27.340Z - info: getProjects
+2018-07-08T11:30:27.348Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T11:30:27.349Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:31:25.883Z - info: User function triggered, starting execution
+2018-07-08T11:31:25.886Z - info: body: {"responseId":"abe9e923-9df5-4a29-bc5c-47db5ffc1f3f","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":2,"parameters":{"region.original":"NA","empid.original":"kate","region":"NA","empid":1}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:31:25.889Z - info: getProjects
+2018-07-08T11:31:25.894Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T11:31:25.895Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:35:34.918Z - info: User function triggered, starting execution
+2018-07-08T11:35:34.920Z - info: body: {"responseId":"5f918f63-3877-4751-8024-74b2c70f256b","queryResult":{"queryText":"kate","parameters":{"username":"Kate"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getusername
+2018-07-08T11:35:34.922Z - info: user:  {"empid":1,"username":"Kate Svoboda","role":"VP"}
+2018-07-08T11:35:34.929Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T11:35:34.930Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:36:02.930Z - info: User function triggered, starting execution
+2018-07-08T11:36:02.933Z - info: body: {"responseId":"494de336-fc67-4d83-a6d0-e4fa7e6df630","queryResult":{"queryText":"kate","parameters":{"username":"Kate Svoboda"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:36:02.933Z - info: getusername
+2018-07-08T11:36:02.937Z - info: user:  {"empid":1,"username":"Kate Svoboda","role":"VP"}
+2018-07-08T11:36:02.943Z - info: Execution took 13 ms, user function completed successfully
+2018-07-08T11:37:09.074Z - info: User function triggered, starting execution
+2018-07-08T11:37:09.077Z - info: body: {"responseId":"4496559b-40da-441c-b801-fe0210e095e7","queryResult":{"queryText":"kate","parameters":{"username":"Kate Svoboda"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:37:09.077Z - info: getusername
+2018-07-08T11:37:09.080Z - info: user:  {"empid":1,"username":"Kate Svoboda","role":"VP"}
+2018-07-08T11:37:09.086Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T11:38:12.712Z - info: User function triggered, starting execution
+2018-07-08T11:38:12.714Z - info: body: {"responseId":"15eff537-291e-412a-8c8e-35a5fa4b5b28","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"NA","region":"NA","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:38:12.716Z - info: getProjects
+2018-07-08T11:38:12.722Z - info: [ { type: 'L1', typeCount: 1 },
+  { type: 'L2', typeCount: 3 },
+  { type: 'L3', typeCount: 2 },
+  { type: 'L4', typeCount: 1 } ]
+2018-07-08T11:38:12.722Z - info: Function crashed
+2018-07-08T11:38:12.722Z - info: ReferenceError: username is not defined
+    at getProjects (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:78:21)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:213:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T11:38:12.728Z - info: Execution took 17 ms, user function completed successfully
+2018-07-08T11:39:31.303Z - info: User function triggered, starting execution
+2018-07-08T11:39:31.306Z - info: body: {"responseId":"15eff537-291e-412a-8c8e-35a5fa4b5b28","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"NA","region":"NA","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjects
+2018-07-08T11:39:31.314Z - info: [ { type: 'L1', typeCount: 1 },
+  { type: 'L2', typeCount: 3 },
+  { type: 'L3', typeCount: 2 },
+  { type: 'L4', typeCount: 1 } ]
+2018-07-08T11:39:31.314Z - info: Kate Svoboda, there are 7 projects. 1 L1, 3 L2, 2 L3, 1 L4, .
+2018-07-08T11:39:31.321Z - info: Execution took 19 ms, user function completed successfully
+2018-07-08T11:39:31.322Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:40:16.313Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:53:20.494Z - info: User function triggered, starting execution
+2018-07-08T11:53:20.496Z - info: body: {"responseId":"15eff537-291e-412a-8c8e-35a5fa4b5b28","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"NA","region":"NA","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Total Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getTotalProjects
+2018-07-08T11:53:20.506Z - info: [ { region: undefined, projectCount: 0 } ]
+2018-07-08T11:53:20.507Z - info: Kate Svoboda, there are NaN projects. 0 undefined.
+2018-07-08T11:53:20.515Z - info: Execution took 20 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:53:49.567Z - info: User function triggered, starting execution
+2018-07-08T11:53:49.570Z - info: body: {"responseId":"15eff537-291e-412a-8c8e-35a5fa4b5b28","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"NA","region":"NA","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"NA","username.original":"kate","region":"NA","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:53:49.571Z - info: getProjects
+2018-07-08T11:53:49.586Z - info: Execution took 19 ms, user function completed successfully
+2018-07-08T11:55:25.326Z - info: User function triggered, starting execution
+2018-07-08T11:55:25.329Z - info: body: {"responseId":"34f80ce6-0f37-4f5d-8963-0bd195c14ad8","queryResult":{"queryText":"items += `${element.projectCount} ${element.region} and `;","parameters":{"region":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"","username.original":"kate","region":"","username":"Kate Svoboda"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"","region":"","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":0.64,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:55:25.330Z - info: getProjects
+2018-07-08T11:55:25.347Z - info: Execution took 19 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:59:19.501Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T11:59:19.907Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:59:37.370Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T11:59:37.443Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T11:59:40.897Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T11:59:40.932Z - info: User function triggered, starting execution
+2018-07-08T11:59:40.934Z - info: body: {"responseId":"34f80ce6-0f37-4f5d-8963-0bd195c14ad8","queryResult":{"queryText":"items += `${element.projectCount} ${element.region} and `;","parameters":{"region":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"","username.original":"kate","region":"","username":"Kate Svoboda"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"","region":"","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":0.64,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T11:59:40.935Z - info: getProjects
+2018-07-08T11:59:40.946Z - info: Execution took 13 ms, user function completed successfully
+2018-07-08T11:59:40.948Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:00:17.008Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:00:17.051Z - info: User function triggered, starting execution
+2018-07-08T12:00:17.053Z - info: body: {"responseId":"34f80ce6-0f37-4f5d-8963-0bd195c14ad8","queryResult":{"queryText":"items += `${element.projectCount} ${element.region} and `;","parameters":{"region":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"","username.original":"kate","region":"","username":"Kate Svoboda"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"","region":"","user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":0.64,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:00:17.053Z - info: getProjects
+2018-07-08T12:00:17.063Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T12:00:17.065Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:01:40.828Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:01:40.921Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:02:01.843Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:02:01.885Z - info: User function triggered, starting execution
+2018-07-08T12:02:01.887Z - info: body: {"responseId":"196155f2-f536-4fe1-87fa-a79c56dcdacd","queryResult":{"queryText":"total ptojects","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d8c1f279-51bf-41a2-a7c0-dcd35fd9e085","displayName":"Get Total Projects"},"intentDetectionConfidence":0.76,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:02:01.888Z - info: getTotalProjects
+2018-07-08T12:02:01.891Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:02:01.892Z - info: Kate Svoboda, there are NaN projects. 7 NA, 3 EMEA and 1 APAC.
+2018-07-08T12:02:01.900Z - info: Execution took 13 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:02:44.111Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:02:44.633Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:02:47.041Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:02:47.216Z - info: User function triggered, starting execution
+2018-07-08T12:02:47.220Z - info: body: {"responseId":"196155f2-f536-4fe1-87fa-a79c56dcdacd","queryResult":{"queryText":"total ptojects","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d8c1f279-51bf-41a2-a7c0-dcd35fd9e085","displayName":"Get Total Projects"},"intentDetectionConfidence":0.76,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getTotalProjects
+2018-07-08T12:02:47.223Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:02:47.223Z - info: Kate Svoboda, there are 1 projects. 7 NA, 3 EMEA and 1 APAC.
+2018-07-08T12:02:47.231Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T12:02:47.233Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:03:26.997Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:03:27.073Z - info: User function triggered, starting execution
+2018-07-08T12:03:27.075Z - info: body: {"responseId":"196155f2-f536-4fe1-87fa-a79c56dcdacd","queryResult":{"queryText":"total ptojects","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d8c1f279-51bf-41a2-a7c0-dcd35fd9e085","displayName":"Get Total Projects"},"intentDetectionConfidence":0.76,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:03:27.076Z - info: getTotalProjects
+2018-07-08T12:03:27.079Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:03:27.080Z - info: Kate Svoboda, there are 11 projects. 7 NA, 3 EMEA and 1 APAC.
+2018-07-08T12:03:27.087Z - info: Execution took 13 ms, user function completed successfully
+2018-07-08T12:03:27.096Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:03:29.957Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:03:30.351Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:03:59.153Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:03:59.194Z - info: User function triggered, starting execution
+2018-07-08T12:03:59.196Z - info: body: {"responseId":"196155f2-f536-4fe1-87fa-a79c56dcdacd","queryResult":{"queryText":"total ptojects","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d8c1f279-51bf-41a2-a7c0-dcd35fd9e085","displayName":"Get Total Projects"},"intentDetectionConfidence":0.76,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:03:59.198Z - info: getTotalProjects
+2018-07-08T12:03:59.201Z - info: [ { region: 'EMEA', projectCount: 3 } ]
+2018-07-08T12:03:59.201Z - info: Varun Sharma, there are 3 projects. 3 EMEA.
+2018-07-08T12:03:59.208Z - info: Execution took 13 ms, user function completed successfully
+2018-07-08T12:03:59.209Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:07:41.360Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:07:41.608Z - info: User function triggered, starting execution
+2018-07-08T12:07:41.610Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"varun","user":{"empid":2,"role":"director","username":"Varun Sharma"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"varun","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:07:41.613Z - info: getImpactProjects
+[]
+Varun Sharma,  has issues and may get delayed.
+2018-07-08T12:07:41.618Z - info: Execution took 10 ms, user function completed successfully
+2018-07-08T12:07:41.620Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:09:15.360Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:09:15.890Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:09:36.425Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:09:36.478Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:09:45.925Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:09:46.118Z - info: User function triggered, starting execution
+2018-07-08T12:09:46.120Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"varun","user":{"empid":2,"role":"director","username":"Varun Sharma"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"varun","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:09:46.121Z - info: getImpactProjects
+2018-07-08T12:09:46.124Z - info: [ { project: 'OC03' } ]
+2018-07-08T12:09:46.125Z - info: Function crashed
+2018-07-08T12:09:46.125Z - info: ReferenceError: username is not defined
+    at getImpactProjects (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:159:19)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:236:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T12:09:46.134Z - info: Execution took 13 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:10:12.608Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:10:12.713Z - info: User function triggered, starting execution
+2018-07-08T12:10:12.715Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"varun","user":{"empid":2,"role":"director","username":"Varun Sharma"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"varun","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:10:12.716Z - info: getImpactProjects
+2018-07-08T12:10:12.721Z - info: [ { project: 'OC03' } ]
+Varun Sharma, Project OC03,  has issues and may get delayed.
+2018-07-08T12:10:12.731Z - info: Execution took 15 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:10:15.823Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:10:16.428Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:11:27.405Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:11:27.527Z - info: User function triggered, starting execution
+2018-07-08T12:11:27.536Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"varun","user":{"empid":2,"role":"director","username":"Varun Sharma"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"varun","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getImpactProjects
+[ { project: 'OC03' } ]
+Varun Sharma, Project OC03,  has issues and may get delayed.
+2018-07-08T12:11:27.543Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T12:11:27.546Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:12:06.665Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:12:06.709Z - info: User function triggered, starting execution
+2018-07-08T12:12:06.711Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"kate","user":{"empid":1,"role":"VP","username":"Kate"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"kate","username":"Kate"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:12:06.713Z - info: getImpactProjects
+2018-07-08T12:12:06.715Z - info: [ { project: 'AM01' } ]
+2018-07-08T12:12:06.715Z - info: Kate, Project AM01,  has issues and may get delayed.
+2018-07-08T12:12:06.723Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T12:12:06.724Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:12:28.480Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:12:28.938Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:12:42.378Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:12:42.788Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:15:28.558Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:15:28.628Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:16:29.434Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:16:30.022Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:16:34.518Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:16:34.558Z - info: User function triggered, starting execution
+2018-07-08T12:16:34.560Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"kate","user":{"empid":1,"role":"VP","username":"Kate"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"kate","username":"Kate"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:16:34.562Z - info: getImpactProjects
+2018-07-08T12:16:34.570Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T12:16:34.580Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:17:03.985Z - info: [ { region: 'NA', projectCount: 7 },
+  { region: 'EMEA', projectCount: 3 },
+  { region: 'APAC', projectCount: 1 } ]
+2018-07-08T12:17:04.385Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:19:56.523Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:22:04.103Z - info: User function triggered, starting execution
+2018-07-08T12:22:04.105Z - info: body: {"responseId":"99550e52-fc67-4643-a504-083bb723746a","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"kate","user":{"empid":1,"role":"VP","username":"Kate"},"username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"kate","username":"Kate"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:22:04.106Z - info: getImpactProjects
+2018-07-08T12:22:04.114Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T12:22:04.116Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:22:09.339Z - info: User function triggered, starting execution
+2018-07-08T12:22:09.341Z - info: body: {"responseId":"ec1cfdcf-56ba-43a2-8944-d8e4b11c46ff","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:22:09.343Z - info: getImpactProjects
+2018-07-08T12:22:09.349Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T12:22:09.352Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:22:13.373Z - info: User function triggered, starting execution
+2018-07-08T12:22:13.376Z - info: body: {"responseId":"ec1cfdcf-56ba-43a2-8944-d8e4b11c46ff","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"user":{"empid":1,"role":"VP","username":"Kate Svoboda"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getImpactProjects
+2018-07-08T12:22:13.385Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T12:22:13.387Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:23:55.080Z - info: User function triggered, starting execution
+2018-07-08T12:23:55.082Z - info: body: {"responseId":"9bf59d20-ff54-49af-9d59-65bf3f3e75c1","queryResult":{"queryText":"issue project","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"username.original":"kate","user":{"empid":1,"role":"VP","username":"Kate Svoboda"},"username":"Kate Svoboda"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9aea8f6c-dcd4-498f-abae-001e7e6bdddc","displayName":"Impact Projects"},"intentDetectionConfidence":0.66,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getImpactProjects
+2018-07-08T12:23:55.091Z - info: Execution took 10 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:24:46.611Z - info: User function triggered, starting execution
+2018-07-08T12:24:46.614Z - info: body: {"responseId":"f7e78766-9b48-4c48-82c2-762da20035ae","queryResult":{"queryText":"who owns this","parameters":{},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/issueproject","lifespanCount":3,"parameters":{"issueproject":"AM01"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"username.original":"kate","user":{"empid":1,"role":"VP","username":"Kate Svoboda"},"username":"Kate Svoboda"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"username.original":"kate","username":"Kate Svoboda"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/7996ab4c-5319-4a5c-9c11-65fe3425699e","displayName":"Project Owner"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:24:46.615Z - info: getProjectOwner
+Issue project AM01
+2018-07-08T12:24:46.619Z - info: { pm: 'vijay', tl: 'abhishek', developer: 'aman', qa: 'neeraj' }
+2018-07-08T12:24:46.620Z - info: Kate Svoboda, PM vijay, TL abhishek, Developer aman and QA neeraj.
+2018-07-08T12:24:46.626Z - info: Execution took 15 ms, user function completed successfully
+2018-07-08T12:24:46.628Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:32:51.078Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:37:06.005Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:38:50.414Z - info: User function triggered, starting execution
+2018-07-08T12:38:50.416Z - info: body: {"responseId":"f7c17c5f-19be-49c4-8c72-3299bfc72f71","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:38:50.416Z - info: getProjects
+2018-07-08T12:38:50.425Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T12:38:50.426Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:39:36.391Z - info: User function triggered, starting execution
+2018-07-08T12:39:36.393Z - info: body: {"responseId":"f7c17c5f-19be-49c4-8c72-3299bfc72f71","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjects
+2018-07-08T12:39:36.403Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T12:39:36.404Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:40:14.119Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T12:40:14.120Z - error: supervisorPort (5000) is already in use
+2018-07-08T12:40:14.121Z - error: restPort (5001) is already in use
+2018-07-08T12:40:16.805Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:40:25.853Z - info: User function triggered, starting execution
+2018-07-08T12:40:25.856Z - info: body: {"responseId":"f7c17c5f-19be-49c4-8c72-3299bfc72f71","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:40:25.859Z - info: getProjects
+2018-07-08T12:40:25.864Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T12:40:25.873Z - info: Execution took 19 ms, user function completed successfully
+2018-07-08T12:40:25.874Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:41:16.642Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T12:41:16.644Z - error: supervisorPort (5000) is already in use
+2018-07-08T12:41:16.645Z - error: restPort (5001) is already in use
+2018-07-08T12:41:19.998Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:41:29.006Z - info: User function triggered, starting execution
+2018-07-08T12:41:29.008Z - info: body: {"responseId":"f7c17c5f-19be-49c4-8c72-3299bfc72f71","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:41:29.010Z - info: getProjects
+2018-07-08T12:41:29.013Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T12:41:29.021Z - info: Execution took 15 ms, user function completed successfully
+2018-07-08T12:42:05.836Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T12:42:05.838Z - error: supervisorPort (5000) is already in use
+2018-07-08T12:42:05.839Z - error: restPort (5001) is already in use
+2018-07-08T12:42:11.505Z - info: User function triggered, starting execution
+2018-07-08T12:42:11.507Z - info: body: {"responseId":"f7c17c5f-19be-49c4-8c72-3299bfc72f71","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T12:42:11.508Z - info: getProjects
+2018-07-08T12:42:11.512Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T12:42:11.522Z - info: Execution took 15 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T12:42:34.052Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T12:42:34.054Z - error: supervisorPort (5000) is already in use
+2018-07-08T12:42:34.055Z - error: restPort (5001) is already in use
+2018-07-08T12:42:40.629Z - info: User function triggered, starting execution
+2018-07-08T12:42:40.632Z - info: body: {"responseId":"f7c17c5f-19be-49c4-8c72-3299bfc72f71","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjects
+2018-07-08T12:42:40.637Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T12:42:40.647Z - info: Execution took 18 ms, user function completed successfully
+2018-07-08T12:45:22.555Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T12:45:22.557Z - error: supervisorPort (5000) is already in use
+2018-07-08T12:45:22.558Z - error: restPort (5001) is already in use
+2018-07-08T14:54:11.560Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T14:54:11.562Z - error: supervisorPort (5000) is already in use
+2018-07-08T14:54:11.563Z - error: restPort (5001) is already in use
+2018-07-08T14:54:14.857Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:05:58.143Z - info: User function triggered, starting execution
+2018-07-08T15:05:58.146Z - info: body: {"responseId":"784a1cd3-457f-4fcb-af05-a0e9f9d17a04","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjects
+NA
+2018-07-08T15:05:58.152Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T15:05:58.160Z - info: Execution took 17 ms, user function completed successfully
+2018-07-08T15:05:58.161Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:07:34.963Z - info: User function triggered, starting execution
+2018-07-08T15:07:34.966Z - info: body: {"responseId":"5c334310-a0ed-4ab8-aadf-19be17559656","queryResult":{"queryText":"yes please","parameters":{"region":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/region","lifespanCount":4,"parameters":{"region.original":"","region":""}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"","username.original":"varun","region":"","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"","region":"","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjects
+
+2018-07-08T15:07:34.971Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T15:07:34.980Z - info: Execution took 17 ms, user function completed successfully
+2018-07-08T15:09:26.856Z - info: User function triggered, starting execution
+2018-07-08T15:09:26.858Z - info: body: {"responseId":"784a1cd3-457f-4fcb-af05-a0e9f9d17a04","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:09:26.859Z - info: getProjects
+2018-07-08T15:09:26.859Z - info: NA
+2018-07-08T15:09:26.864Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T15:09:26.871Z - info: Execution took 17 ms, user function completed successfully
+2018-07-08T15:14:05.053Z - info: User function triggered, starting execution
+2018-07-08T15:14:05.055Z - info: body: {"responseId":"5c334310-a0ed-4ab8-aadf-19be17559656","queryResult":{"queryText":"yes please","parameters":{"region":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/region","lifespanCount":4,"parameters":{"region.original":"EMEA","region":"EMEA"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"","username.original":"varun","region":"","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"","region":"","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:14:05.056Z - info: getProjects
+EMEA
+2018-07-08T15:14:05.062Z - info: [ { type: 'L2', typeCount: 1 },
+  { type: 'L4', typeCount: 1 },
+  { type: 'L3', typeCount: 1 } ]
+2018-07-08T15:14:05.068Z - info: Execution took 16 ms, user function completed successfully
+2018-07-08T15:14:05.069Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:19:21.597Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:19:21.598Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:19:21.599Z - error: restPort (5001) is already in use
+2018-07-08T15:19:24.909Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:21:20.030Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:21:20.032Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:21:20.033Z - error: restPort (5001) is already in use
+2018-07-08T15:21:35.598Z - info: User function triggered, starting execution
+2018-07-08T15:21:35.601Z - info: body: {"responseId":"784a1cd3-457f-4fcb-af05-a0e9f9d17a04","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:21:35.601Z - info: getProjects
+NA
+2018-07-08T15:21:35.606Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T15:21:35.608Z - info: EMEA
+2018-07-08T15:21:35.613Z - info: Execution took 16 ms, user function completed successfully
+2018-07-08T15:21:35.616Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:24:06.283Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:24:06.285Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:24:06.285Z - error: restPort (5001) is already in use
+2018-07-08T15:24:12.513Z - info: User function triggered, starting execution
+2018-07-08T15:24:12.519Z - info: body: {"responseId":"784a1cd3-457f-4fcb-af05-a0e9f9d17a04","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+getProjects
+parameter NA
+Function crashed
+TypeError: Cannot read property 'parameters' of null
+    at getProjects (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:68:43)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:238:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T15:24:12.522Z - info: Execution took 10 ms, user function completed successfully
+2018-07-08T15:24:12.524Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:24:46.338Z - info: User function triggered, starting execution
+2018-07-08T15:24:46.340Z - info: body: {"responseId":"5c334310-a0ed-4ab8-aadf-19be17559656","queryResult":{"queryText":"yes please","parameters":{"region":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/region","lifespanCount":4,"parameters":{"region.original":"","region":""}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"region.original":"","username.original":"varun","region":"","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"region.original":"","region":"","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:24:46.341Z - info: getProjects
+parameter 
+context 
+
+2018-07-08T15:24:46.347Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T15:24:46.350Z - info: EMEA
+2018-07-08T15:24:46.355Z - info: Execution took 19 ms, user function completed successfully
+2018-07-08T15:29:37.667Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:29:37.668Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:29:37.669Z - error: restPort (5001) is already in use
+2018-07-08T15:29:45.198Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:29:45.200Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:29:45.201Z - error: restPort (5001) is already in use
+2018-07-08T15:29:56.062Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:29:56.064Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:29:56.065Z - error: restPort (5001) is already in use
+2018-07-08T15:29:59.893Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:37:52.569Z - info: User function triggered, starting execution
+2018-07-08T15:37:52.571Z - info: Function crashed
+2018-07-08T15:37:52.574Z - info: TypeError: Cannot read property 'length' of undefined
+    at V2Agent.convertV2ContextToV1Context_ (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/v2-agent.js:256:58)
+    at agent.contexts.agent.request_.body.queryResult.outputContexts.map (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/v2-agent.js:99:32)
+    at Array.map (<anonymous>)
+    at V2Agent.processRequest_ (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/v2-agent.js:99:10)
+    at new WebhookClient (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:209:17)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:16:19)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+2018-07-08T15:37:52.579Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T15:37:52.580Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T15:38:29.659Z - info: User function triggered, starting execution
+2018-07-08T15:38:29.662Z - info: body: {"responseId":"4aa5528a-f51a-4cc8-a31f-5139edf619f7","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:38:29.662Z - info: getProjects
+parameter NA
+2018-07-08T15:38:29.663Z - info: Function crashed
+2018-07-08T15:38:29.664Z - info: TypeError: Cannot read property 'parameters' of null
+    at getProjects (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:68:43)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:238:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T15:38:29.670Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T15:39:22.857Z - info: User function triggered, starting execution
+2018-07-08T15:39:22.860Z - info: body: {"responseId":"05be0121-464d-4992-8760-5127ab09c78e","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:39:22.860Z - info: getProjects
+2018-07-08T15:39:22.861Z - info: parameter NA
+Function crashed
+2018-07-08T15:39:22.862Z - info: TypeError: Cannot read property 'parameters' of null
+    at getProjects (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:68:43)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:238:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T15:39:22.868Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T15:40:09.464Z - error: SUPERVISOR error Error: listen EADDRINUSE 127.0.0.1:5000
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1505:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)
+2018-07-08T15:40:09.466Z - error: supervisorPort (5000) is already in use
+2018-07-08T15:40:09.467Z - error: restPort (5001) is already in use
+2018-07-08T15:41:02.354Z - info: User function triggered, starting execution
+2018-07-08T15:41:02.357Z - info: body: {"responseId":"05be0121-464d-4992-8760-5127ab09c78e","queryResult":{"queryText":"How many projects in NA region?","parameters":{"region":"NA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":99,"parameters":{"region.original":"NA","region":"NA","user":{"empid":2,"role":"director","username":"Varun Sharma"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":4,"parameters":{"region.original":"NA","username.original":"varun","region":"NA","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/072c8bfd-6316-458f-a73e-8e2cc811ca9b","displayName":"Get Projects"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T15:41:02.359Z - info: getProjects
+parameter NA
+NA
+2018-07-08T15:41:02.363Z - info: [ { type: undefined, typeCount: 0 } ]
+2018-07-08T15:41:02.366Z - info: EMEA
+2018-07-08T15:41:02.371Z - info: Execution took 18 ms, user function completed successfully
+2018-07-08T15:41:02.375Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:26:39.191Z - info: [ { memberCount: 9 } ]
+2018-07-08T16:26:39.193Z - info: [ { memberCount: 2, utilizationtoday: 88 } ]
+2018-07-08T16:26:39.345Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:33:22.000Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:33:22.116Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:36:34.046Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:36:34.131Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:40:00.216Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:40:00.341Z - info: User function triggered, starting execution
+2018-07-08T16:40:00.344Z - info: body: {"responseId":"f711112c-2312-4109-bcc3-7c70d6ef8bd9","queryResult":{"queryText":"May I know utilization for EMEA team?","action":"input.unknown","parameters":{},"allRequiredParamsPresent":true,"fulfillmentText":"I missed what you said. Say it again?","fulfillmentMessages":[{"text":{"text":["Say that again?"]}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/cfeddb5c-b252-4670-858a-b5d77584d143","displayName":"Default Fallback Intent"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:40:00.344Z - info: fallback
+2018-07-08T16:40:00.352Z - info: Execution took 9 ms, user function completed successfully
+2018-07-08T16:40:00.354Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:44:34.521Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:44:34.653Z - info: User function triggered, starting execution
+2018-07-08T16:44:34.656Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for APAC team?","parameters":{"region":"APAC"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:44:34.657Z - info: getUtilization
+2018-07-08T16:44:34.663Z - info: Function crashed
+2018-07-08T16:44:34.664Z - info: ReferenceError: user is not defined
+    at getUtilization (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:256:21)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:298:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T16:44:34.669Z - info: Execution took 15 ms, user function completed successfully
+2018-07-08T16:45:19.191Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:45:19.813Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:45:57.883Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:45:57.936Z - info: User function triggered, starting execution
+2018-07-08T16:45:57.937Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for APAC team?","parameters":{"region":"APAC"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:45:57.938Z - info: getUtilization
+2018-07-08T16:45:57.943Z - info: Varun Sharma, 0 are at 100% whereas 2 members have NaN% available bandwidth.
+2018-07-08T16:45:57.948Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T16:45:57.949Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:46:46.047Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:46:46.172Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:47:04.237Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:47:04.491Z - info: User function triggered, starting execution
+2018-07-08T16:47:04.496Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for APAC team?","parameters":{"region":"APAC"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:47:04.497Z - info: getUtilization
+2018-07-08T16:47:04.506Z - info: Varun Sharma, 0 are at 100% whereas 2 members have NaN% available bandwidth.
+2018-07-08T16:47:04.515Z - info: Execution took 22 ms, user function completed successfully
+2018-07-08T16:47:04.515Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:48:00.964Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:48:01.082Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:48:15.117Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:48:15.190Z - info: User function triggered, starting execution
+2018-07-08T16:48:15.193Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for APAC team?","parameters":{"region":"APAC"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:48:15.193Z - info: getUtilization
+2018-07-08T16:48:15.198Z - info: [ { memberCount: 0 } ]
+2018-07-08T16:48:15.201Z - info: Varun Sharma, 0 are at 100% whereas 2 members have NaN% available bandwidth.
+2018-07-08T16:48:15.208Z - info: Execution took 17 ms, user function completed successfully
+2018-07-08T16:48:15.209Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:50:07.183Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:50:07.349Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:50:17.573Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:50:17.683Z - info: User function triggered, starting execution
+2018-07-08T16:50:17.686Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for APAC team?","parameters":{"region":"APAC"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:50:17.687Z - info: getUtilization
+2018-07-08T16:50:17.693Z - info: [ { memberCount: 0 } ]
+2018-07-08T16:50:17.704Z - info: Execution took 20 ms, user function completed successfully
+2018-07-08T16:50:38.413Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:50:38.749Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:50:38.751Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:50:38.949Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:50:38.957Z - info: Execution took 809 ms, finished with status: 'crash'
+2018-07-08T16:50:45.063Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:50:45.175Z - info: User function triggered, starting execution
+2018-07-08T16:50:45.177Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for APAC team?","parameters":{"region":"APAC"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:50:45.178Z - info: getUtilization
+2018-07-08T16:50:45.181Z - info: [ { memberCount: 0 } ]
+2018-07-08T16:50:45.190Z - info: Execution took 14 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:50:59.685Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:50:59.793Z - info: User function triggered, starting execution
+2018-07-08T16:50:59.796Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for EMEA team?","parameters":{"region":"EMEA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:50:59.797Z - info: getUtilization
+2018-07-08T16:50:59.804Z - info: [ { memberCount: 9 } ]
+2018-07-08T16:50:59.804Z - info: Varun Sharma, 9 are at 100% whereas 2 members have NaN% available bandwidth.
+2018-07-08T16:50:59.815Z - info: Execution took 21 ms, user function completed successfully
+2018-07-08T16:51:55.949Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:51:56.365Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:52:08.009Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:52:08.143Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:52:10.829Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:52:10.941Z - info: User function triggered, starting execution
+2018-07-08T16:52:10.944Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for EMEA team?","parameters":{"region":"EMEA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:52:10.945Z - info: getUtilization
+2018-07-08T16:52:10.950Z - info: [ { memberCount: 9 } ]
+2018-07-08T16:52:10.953Z - info: NaN
+2018-07-08T16:52:10.954Z - info: Varun Sharma, 9 are at 100% whereas 2 members have NaN% available bandwidth.
+2018-07-08T16:52:10.959Z - info: Execution took 18 ms, user function completed successfully
+2018-07-08T16:52:10.961Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:53:31.805Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:53:31.953Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:54:15.440Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:54:15.563Z - info: User function triggered, starting execution
+2018-07-08T16:54:15.566Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for EMEA team?","parameters":{"region":"EMEA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:54:15.567Z - info: getUtilization
+2018-07-08T16:54:15.572Z - info: [ { memberCount: 9 } ]
+2018-07-08T16:54:15.576Z - info: 12
+2018-07-08T16:54:15.576Z - info: Function crashed
+2018-07-08T16:54:15.577Z - info: ReferenceError: utilizationtoday is not defined
+    at /home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:260:64
+    at Array.forEach (<anonymous>)
+    at getUtilization (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:257:30)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:306:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+2018-07-08T16:54:15.584Z - info: Execution took 19 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:54:58.461Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:54:58.586Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:55:22.550Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:55:22.683Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:55:29.243Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:55:29.292Z - info: User function triggered, starting execution
+2018-07-08T16:55:29.294Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for EMEA team?","parameters":{"region":"EMEA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:55:29.295Z - info: getUtilization
+2018-07-08T16:55:29.302Z - info: [ { memberCount: 2, utilizationtoday: 88 } ]
+2018-07-08T16:55:29.302Z - info: 12
+Varun Sharma, 9 are at 100% whereas 2 members have 88% available bandwidth.
+2018-07-08T16:55:29.308Z - info: Execution took 15 ms, user function completed successfully
+2018-07-08T16:55:29.310Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:55:54.074Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:55:54.694Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:56:14.170Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:56:14.337Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:56:29.486Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:56:29.602Z - info: User function triggered, starting execution
+2018-07-08T16:56:29.605Z - info: body: {"responseId":"f1e1372c-7099-462a-bb5a-7ed99f79f419","queryResult":{"queryText":"May I know utilization for EMEA team?","parameters":{"region":"EMEA"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":1,"parameters":{"region.original":"APAC","username.original":"varun","region":"APAC","username":"Varun Sharma"}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":96,"parameters":{"region.original":"APAC","region":"APAC","user":{"empid":2,"role":"director","username":"Varun Sharma"}}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/796d6977-b9cd-455c-acc6-54b224ce6ad4","displayName":"Get Utilization"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:56:29.606Z - info: getUtilization
+2018-07-08T16:56:29.613Z - info: [ { memberCount: 2, utilizationtoday: 88 } ]
+2018-07-08T16:56:29.613Z - info: 12
+Varun Sharma, 9 members are at 100% whereas 2 members have 12% available bandwidth.
+2018-07-08T16:56:29.622Z - info: Execution took 18 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T16:58:51.108Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:58:51.187Z - info: User function triggered, starting execution
+2018-07-08T16:58:51.190Z - info: body: {"responseId":"4799eede-b664-491e-920e-3a78ed7a3573","queryResult":{"queryText":"varun","parameters":{"username":"Varun Sharma"},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":5,"parameters":{"username.original":"varun","username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/9395b708-91ca-44f3-89ff-1716c090f543","displayName":"Get User Name"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:58:51.191Z - info: getusername
+2018-07-08T16:58:51.193Z - info: user:  {"empid":2,"username":"Varun Sharma","role":"director"}
+2018-07-08T16:58:51.199Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T16:59:29.032Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T16:59:29.152Z - info: User function triggered, starting execution
+2018-07-08T16:59:29.155Z - info: body: {"responseId":"6df1ca7b-9e9c-4ae4-a03f-218969ec8f29","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:26:55+05:30","endDate":"2018-07-08T22:26:55+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T16:59:29.155Z - info: getSupport
+2018-07-08T16:59:29.161Z - info: Execution took 9 ms, user function completed successfully
+2018-07-08T16:59:29.167Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:00:09.483Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:00:09.610Z - info: User function triggered, starting execution
+2018-07-08T17:00:09.612Z - info: body: {"responseId":"6df1ca7b-9e9c-4ae4-a03f-218969ec8f29","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:26:55+05:30","endDate":"2018-07-08T22:26:55+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T17:00:09.613Z - info: getSupport
+2018-07-08T17:00:09.620Z - info: Execution took 11 ms, user function completed successfully
+2018-07-08T17:06:21.949Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:06:22.034Z - info: User function triggered, starting execution
+2018-07-08T17:06:22.036Z - info: body: {"responseId":"e62bfca1-bbfc-4b3d-b322-53c711ac3226","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"date-period.original":"weekend","region.original":"EMEA","region":"EMEA","user":{"empid":2,"role":"director","username":"Varun Sharma"},"date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"date-period.original":"weekend","region.original":"EMEA","username.original":"varun","region":"EMEA","date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"},"username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T17:06:22.037Z - info: getSupport
+2018-07-08T17:06:22.040Z - info: []
+2018-07-08T17:06:22.041Z - info: Varun Sharma, 0 members named  are available this weekend.
+2018-07-08T17:06:22.045Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T17:07:08.732Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:07:08.801Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:07:08.803Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:07:08.837Z - error:  code=500, status=INTERNAL, message=Function worker killed by signal: SIGTERM, errors=[Function worker killed by signal: SIGTERM]
+2018-07-08T17:07:08.854Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:07:08.987Z - info: Execution took 811 ms, finished with status: 'crash'
+2018-07-08T17:08:15.028Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:08:15.129Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:08:34.887Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:08:34.933Z - info: User function triggered, starting execution
+2018-07-08T17:08:34.935Z - info: body: {"responseId":"e62bfca1-bbfc-4b3d-b322-53c711ac3226","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"date-period.original":"weekend","region.original":"EMEA","region":"EMEA","user":{"empid":2,"role":"director","username":"Varun Sharma"},"date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"date-period.original":"weekend","region.original":"EMEA","username.original":"varun","region":"EMEA","date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"},"username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T17:08:34.940Z - info: getSupport
+undefined
+2018-07-08T17:08:34.942Z - info: []
+Varun Sharma, 0 members named  are available this weekend.
+2018-07-08T17:08:34.950Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T17:08:34.953Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:10:22.793Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:10:23.433Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:11:47.313Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:11:47.389Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:11:58.695Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:11:58.807Z - info: User function triggered, starting execution
+2018-07-08T17:11:58.811Z - info: body: {"responseId":"e62bfca1-bbfc-4b3d-b322-53c711ac3226","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":98,"parameters":{"date-period.original":"weekend","region.original":"EMEA","region":"EMEA","user":{"empid":2,"role":"director","username":"Varun Sharma"},"date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":3,"parameters":{"date-period.original":"weekend","region.original":"EMEA","username.original":"varun","region":"EMEA","date-period":{"startDate":"2018-07-08T22:35:56+05:30","endDate":"2018-07-08T22:35:56+05:30"},"username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T17:11:58.812Z - info: getSupport
+2018-07-08T17:11:58.813Z - info: Function crashed
+TypeError: Cannot read property 'parameters' of null
+    at getSupport (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:279:34)
+    at WebhookClient.handleRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/dialogflow-fulfillment/src/dialogflow-fulfillment.js:273:44)
+    at exports.dialogflowFirebaseFulfillment.functions.https.onRequest (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/index.js:308:11)
+    at cloudFunction (/home/arpit/Documents/dialogflow-bot/fulfillment-webhook-nodejs/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:275:10)
+2018-07-08T17:11:58.823Z - info: Execution took 14 ms, user function completed successfully
+2018-07-08T17:11:58.824Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:13:44.302Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:13:44.882Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:16:22.069Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:16:22.198Z - info: User function triggered, starting execution
+2018-07-08T17:16:22.201Z - info: body: {"responseId":"3d371457-b044-4030-8efd-a48e53cd82c3","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/currentregion","lifespanCount":3,"parameters":{"date-period.original":"weekend","currentregion":"EMEA","date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":97,"parameters":{"date-period.original":"weekend","region.original":"EMEA","region":"EMEA","user":{"empid":2,"role":"director","username":"Varun Sharma"},"date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":2,"parameters":{"date-period.original":"weekend","region.original":"EMEA","username.original":"varun","region":"EMEA","date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"},"username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T17:16:22.202Z - info: getSupport
+EMEA
+2018-07-08T17:16:22.204Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:16:22.205Z - info: Varun Sharma, 2 members named undefined undefined  are available this weekend.
+2018-07-08T17:16:22.211Z - info: Execution took 12 ms, user function completed successfully
+2018-07-08T17:16:22.212Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:17:42.674Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:17:42.836Z - info: Worker for dialogflowFirebaseFulfillment closed due to file changes.
+2018-07-08T17:17:47.336Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+2018-07-08T17:17:47.429Z - info: User function triggered, starting execution
+2018-07-08T17:17:47.432Z - info: body: {"responseId":"3d371457-b044-4030-8efd-a48e53cd82c3","queryResult":{"queryText":"weekend support","parameters":{"date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"}},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/currentregion","lifespanCount":3,"parameters":{"date-period.original":"weekend","currentregion":"EMEA","date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user","lifespanCount":97,"parameters":{"date-period.original":"weekend","region.original":"EMEA","region":"EMEA","user":{"empid":2,"role":"director","username":"Varun Sharma"},"date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"}}},{"name":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username","lifespanCount":2,"parameters":{"date-period.original":"weekend","region.original":"EMEA","username.original":"varun","region":"EMEA","date-period":{"startDate":"2018-07-08T22:45:56+05:30","endDate":"2018-07-08T22:45:56+05:30"},"username":"Varun Sharma"}}],"intent":{"name":"projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae","displayName":"Get Support Employee"},"intentDetectionConfidence":1,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"}
+2018-07-08T17:17:47.432Z - info: getSupport
+EMEA
+2018-07-08T17:17:47.435Z - info: [ { employename: 'richa' }, { employename: 'shahil' } ]
+Varun Sharma, 2 members named richa, shahil,  are available this weekend.
+2018-07-08T17:17:47.443Z - info: Execution took 12 ms, user function completed successfully
+Worker for dialogflowFirebaseFulfillment closed due to file changes.

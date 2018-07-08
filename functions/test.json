@@ -1,0 +1,61 @@
+{
+  "responseId": "e62bfca1-bbfc-4b3d-b322-53c711ac3226",
+  "queryResult": {
+    "queryText": "weekend support",
+    "parameters": {
+      "date-period": {
+        "startDate": "2018-07-08T22:35:56+05:30",
+        "endDate": "2018-07-08T22:35:56+05:30"
+      }
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentMessages": [{ "text": { "text": [""] } }],
+    "outputContexts": [
+      {
+        "name":
+          "projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/user",
+        "lifespanCount": 98,
+        "parameters": {
+          "date-period.original": "weekend",
+          "region.original": "EMEA",
+          "region": "EMEA",
+          "user": {
+            "empid": 2,
+            "role": "director",
+            "username": "Varun Sharma"
+          },
+          "date-period": {
+            "startDate": "2018-07-08T22:35:56+05:30",
+            "endDate": "2018-07-08T22:35:56+05:30"
+          }
+        }
+      },
+      {
+        "name":
+          "projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389/contexts/username",
+        "lifespanCount": 3,
+        "parameters": {
+          "date-period.original": "weekend",
+          "region.original": "EMEA",
+          "username.original": "varun",
+          "region": "EMEA",
+          "date-period": {
+            "startDate": "2018-07-08T22:35:56+05:30",
+            "endDate": "2018-07-08T22:35:56+05:30"
+          },
+          "username": "Varun Sharma"
+        }
+      }
+    ],
+    "intent": {
+      "name":
+        "projects/botagent1-e6ccc/agent/intents/d84887a5-798a-4500-ab2a-d992b6d026ae",
+      "displayName": "Get Support Employee"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": { "payload": {} },
+  "session":
+    "projects/botagent1-e6ccc/agent/sessions/fb58e350-e807-b045-95ad-932364195389"
+}
